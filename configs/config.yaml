@@ -1,0 +1,31 @@
+# Data paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  users_file: "users.csv"
+  edges_file: "edges.csv"
+
+# Model settings
+model:
+  type: "GCN"  # Options: GCN, GraphSAGE, GAT
+  hidden_channels: 64
+  num_layers: 3
+  dropout: 0.5
+  
+# Training settings
+training:
+  batch_size: 512
+  learning_rate: 0.001
+  num_epochs: 100
+  early_stopping_patience: 10
+  
+# Evaluation
+evaluation:
+  test_split: 0.2
+  val_split: 0.1
+  random_seed: 42
+  
+# Paths
+paths:
+  model_save_dir: "saved_models"
+  logs_dir: "logs"
