@@ -2,6 +2,8 @@
 
 An intelligent Graph Neural Network model for detecting cyber threats (bots, fake accounts) in social networks.
 
+
+
 ## Project Structure
 
 - `data/` - Dataset storage
@@ -11,19 +13,47 @@ An intelligent Graph Neural Network model for detecting cyber threats (bots, fak
 - `webapp/` - Streamlit web application
 - `configs/` - Configuration files
 
-## Setup
+---
+
+##  Setup
+
+###  Install Dependencies
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
-
-# Download dataset (TwiBot-22 or similar)
-# Place in data/raw/
 ```
 
-## execution
+###  Dataset Setup
+
+- Download the dataset (cresci) [link](https://drive.google.com/drive/folders/15j6JxduklP9MXiH2pz-YXfp6V8Pliw4r?usp=sharing)
+- Extract zip in root folder:
+
+```
+data/raw/
+```
+
+---
+
+##  Execution Pipeline
+
+Run the following scripts in order:
+
+```bash
 python scripts/load_data.py
 python scripts/build_graph.py
 python scripts/train_model.py
+```
 
+---
+
+##  Web Application
+
+Launch the Streamlit-based web interface:
+
+```bash
 streamlit run webapp/app.py
+```
+
+---
+
+
