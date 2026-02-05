@@ -20,7 +20,7 @@ An intelligent Graph Neural Network model for detecting cyber threats (bots, fak
 ### Create a Virtual Environment
 ```bash
 python -m venv venv 
-venv \Scripts\activate
+venv\Scripts\activate
 ```
 
 ###  Install Dependencies
